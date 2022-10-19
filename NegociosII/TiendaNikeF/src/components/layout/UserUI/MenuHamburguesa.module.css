@@ -1,0 +1,199 @@
+
+@media only screen and (min-width: 400px) {
+    .menu_on{
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .menu_on span{
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        transition: all 0.25s ease;
+        transform-origin: 0px 100%;
+    }
+    .menu_on span:nth-child(2){
+        top: calc(50% - 2px);
+    }
+    .menu_on span:nth-child(3){
+        bottom: 0;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -300px;
+        width: 300px;
+        z-index: 1;
+        padding: 90px 30px 30px;
+        background-color: #68C5DB;
+        opacity: 0;
+        transition: all 0.75s ease;
+        font-size: 1.2em;
+        overflow-y: auto;
+    }
+    .nav a{
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.75);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all ease 0.25s;
+    }
+    .nav a:hover{
+        color: rgba(255, 255, 255, 1);
+        border-bottom-color: rgba(255, 255, 255, 0.4);
+    }
+}
+@media only screen and (min-width: 800px) {.menu_on{
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 2;
+}
+.menu_on span{
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    transition: all 0.25s ease;
+    transform-origin: 0px 100%;
+}
+.menu_on span:nth-child(2){
+    top: calc(50% - 2px);
+}
+.menu_on span:nth-child(3){
+    bottom: 0;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    z-index: 1;
+    padding: 90px 30px 30px;
+    background-color: #68C5DB;
+    opacity: 0;
+    transition: all 0.75s ease;
+    font-size: 1.2em;
+    overflow-y: auto;
+}
+.nav a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all ease 0.25s;
+}
+.nav a:hover{
+    color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+}}
+@media only screen and (min-width: 1300px) {.menu_on{
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 2;
+}
+.menu_on span{
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    transition: all 0.25s ease;
+    transform-origin: 0px 100%;
+}
+.menu_on span:nth-child(2){
+    top: calc(50% - 2px);
+}
+.menu_on span:nth-child(3){
+    bottom: 0;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    z-index: 1;
+    padding: 90px 30px 30px;
+    background-color: #68C5DB;
+    opacity: 0;
+    transition: all 0.75s ease;
+    font-size: 1.2em;
+    overflow-y: auto;
+}
+.nav a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all ease 0.25s;
+}
+.nav a:hover{
+    color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+}}
+@media only screen and (min-width: 1800px) {.menu_on{
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 2;
+}
+.menu_on span{
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    transition: all 0.25s ease;
+    transform-origin: 0px 100%;
+}
+.menu_on span:nth-child(2){
+    top: calc(50% - 2px);
+}
+.menu_on span:nth-child(3){
+    bottom: 0;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    z-index: 1;
+    padding: 90px 30px 30px;
+    background-color: #68C5DB;
+    opacity: 0;
+    transition: all 0.75s ease;
+    font-size: 1.2em;
+    overflow-y: auto;
+}
+.nav a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all ease 0.25s;
+}
+.nav a:hover{
+    color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+}}

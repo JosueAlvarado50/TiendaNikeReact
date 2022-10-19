@@ -1,7 +1,33 @@
-.card {
-  padding: 1rem;
-  margin: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  background-color: white;
+
+@media only screen and (min-width: 350px) {}
+@media only screen and (min-width: 800px) {
+  .card {
+    margin-top: 25%;
+    margin-left: 15%;
+    width: 70%;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .card {
+    margin-top: 25%;
+    margin-left: 15%;
+    width: 70%;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .card {
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: white;
+  }
 }

@@ -16,9 +16,11 @@ import UserLogin from "./components/layout/UserUI/UserLogin";
 import UserRegister from "./components/layout/UserUI/UserRegister";
 import ProductsNike from "./pages/ProductsNike";
 import NewProduct from "./pages/newProduct";
+import MenuHamburguesa from "../src/components/layout/UserUI/MenuHamburguesa";
 
 //!Falta corregir mostrar el card
 function App() {
+  const [menu, setmenu] = useState(false);
   const [cartIsShowCart, setCardIsShowCart] = useState(false);
   const authCtx = useContext(AuthContext);
 
@@ -36,6 +38,7 @@ function App() {
       <CartProvier>
         {cartIsShowCart && <Cart onHideCart={hideCartHandler}></Cart>}
         <MainNavigation onShowCart={showCartHandler}></MainNavigation>
+        <MenuHamburguesa></MenuHamburguesa>
         <Layout>
           <Routes>
             <Route path="/" element={<Navigate replace to="/homePage" />} />
