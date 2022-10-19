@@ -1,0 +1,267 @@
+@media only screen and (min-width: 800px) {
+  .header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: -15%;
+  }
+  /*margin-bottom: 15rem;  */
+
+  .logo {
+    color: black;
+    margin-left: -70px;
+    display: flex;
+  }
+  .logo p {
+    font-size: 18px;
+    width: 130px;
+    
+  }
+  .logo img {
+    height: 20px;
+    width: 50px;
+    margin-right: 5%;
+    align-self: center;
+    margin-left: 4%;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 3%;
+    width: 100%;
+    
+
+  }
+  .nav img {
+    height: 20px;
+    width: 20px;
+    position: initial;
+    align-self: center;
+    margin-right: 10%;
+  }
+
+  .nav li {
+    margin-left: 1.5rem;
+
+    display: flex;
+    align-self: center;
+  }
+
+  .nav li p {
+    color: black;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .nav a {
+    color: #88dfdf;
+    text-decoration: none;
+  }
+
+  .nav a:hover,
+  .nav a:active,
+  .nav a.active {
+    color: black;
+    text-decoration: underline;
+  }
+  .logo2 {
+    display: flex;
+    
+  }
+  .logo2 img {
+    height: 30px;
+    width: 30px;
+    margin-left: -40%;
+    
+  }
+  .logo2 button {
+    background-color: transparent;
+    border: 0;
+    font-size: 21px;
+    margin-left: -15%;
+    
+  }
+  .logo2 button:hover {
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    margin-bottom: -15%;
+  }
+  /*margin-bottom: 15rem;  */
+
+  .logo {
+    color: black;
+    margin-left: -80px;
+    display: flex;
+  }
+  .logo p {
+    font-size: 25px;
+    width: 250px;
+  }
+  .logo img {
+    height: 30px;
+    width: 80px;
+    margin-right: 5%;
+    align-self: center;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: -25%;
+    width: 100%;
+  }
+  .nav img {
+    height: 20px;
+    width: 20px;
+    position: initial;
+    align-self: center;
+    margin-right: 10%;
+  }
+
+  .nav li {
+    margin-left: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-self: center;
+  }
+
+  .nav li p {
+    color: black;
+    text-align: center;
+  }
+
+  .nav a {
+    color: #88dfdf;
+    text-decoration: none;
+  }
+
+  .nav a:hover,
+  .nav a:active,
+  .nav a.active {
+    color: black;
+    text-decoration: underline;
+  }
+  .logo2 {
+    display: flex;
+    
+  }
+  .logo2 img {
+    height: 30px;
+    width: 30px;
+    margin-right: -5%;
+  }
+  .logo2 button {
+    background-color: transparent;
+    border: 0;
+    font-size: 21px;
+    margin-right: -140px;
+  }
+  .logo2 button:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .header {
+    margin: auto;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+  }
+  /*margin-bottom: 15rem;  */
+
+  .logo {
+    color: black;
+    margin-left: -80px;
+    display: flex;
+  }
+  .logo p {
+    font-size: 25px;
+    width: 250px;
+  }
+  .logo img {
+    height: 30px;
+    width: 80px;
+    margin-right: 5%;
+    align-self: center;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .nav img {
+    height: 20px;
+    width: 20px;
+    position: initial;
+    align-self: center;
+    margin-right: 10%;
+  }
+
+  .nav li {
+    margin-left: 1.5rem;
+    font-size: 1.25rem;
+    display: flex;
+    align-self: center;
+  }
+
+  .nav li p {
+    color: black;
+    text-align: center;
+  }
+
+  .nav a {
+    color: #88dfdf;
+    text-decoration: none;
+  }
+
+  .nav a:hover,
+  .nav a:active,
+  .nav a.active {
+    color: black;
+    text-decoration: underline;
+  }
+  .logo2 {
+    display: flex;
+    margin-right: -30%;
+  }
+  .logo2 img {
+    height: 30px;
+    width: 30px;
+    margin-right: -5%;
+  }
+  .logo2 button {
+    background-color: transparent;
+    border: 0;
+    font-size: 21px;
+    margin-right: -80px;
+  }
+  .logo2 button:hover {
+    text-decoration: underline;
+  }
+}

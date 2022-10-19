@@ -1,0 +1,59 @@
+@media only screen and (min-width: 1300px) {
+  .prevFooter {
+    width: 100%;
+    height: auto;
+    width: 1300px;
+    margin-bottom: 5%;
+  }
+  .prevFooter img {
+    height: auto;
+    width: 100%;
+    margin-bottom: -8%;
+  }
+
+  .prevFooter button {
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-style: none;
+    height: 40px;
+    width: auto;
+    border: 0;
+    margin-bottom: 3%;
+  }
+  .prevFooter button:hover {
+    background-color: rgba(117, 117, 117, 255);
+    border: 0;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .prevFooter {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+  }
+  .prevFooter img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -90px;
+  }
+
+  .prevFooter button {
+    margin-bottom: 2.5%;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-style: none;
+    height: 40px;
+    width: auto;
+    border: 0;
+  }
+  .prevFooter button:hover {
+    background-color: rgba(117, 117, 117, 255);
+    border: 0;
+  }
+}

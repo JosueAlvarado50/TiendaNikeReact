@@ -1,0 +1,14 @@
+.button {
+  background-color: black;
+  height: 24rem;
+  width: 96%;
+  border-radius: 10px;
+  border-color: blue;
+  margin: 5px;
+  color: white;
+}
+.button:hover,
+.button:active {
+  background-color: transparent;
+  text-decoration: none;
+}

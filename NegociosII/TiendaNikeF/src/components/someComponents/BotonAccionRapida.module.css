@@ -1,0 +1,16 @@
+.share {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #878787;
+  cursor: pointer;
+  z-index: 3;
+  background-image: url(http://www.zupimages.net/up/15/27/enby.png);
+  background-position: 46% center;
+  background-size: 16px auto;
+  background-repeat: no-repeat;
+}

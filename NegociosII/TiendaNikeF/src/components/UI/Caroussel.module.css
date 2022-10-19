@@ -1,0 +1,58 @@
+@media only screen and (min-width: 1300px) {
+  .caroussel {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 100%;
+    width: 1200px;
+    margin: 0 4%;
+    margin-bottom: 5%;
+    display: flex;
+  }
+  ::-webkit-scrollbar {
+    height: 8px;
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .container::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .caroussel {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 100%;
+    padding: 10px;
+    width: auto;
+    margin-bottom: 5%;
+  }
+  ::-webkit-scrollbar {
+    height: 8px;
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .container::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+  }
+}

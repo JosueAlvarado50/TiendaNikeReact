@@ -1,0 +1,242 @@
+@media only screen and (min-width: 1300px) {
+  .background {
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin: 0 20%;
+    width: 1300px;
+  }
+  .blackButton {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-style: none;
+    height: 40px;
+    width: 110px;
+  }
+  .blackButton:hover {
+    background-color: rgba(117, 117, 117, 255);
+    border: 0;
+  }
+  .summary {
+    width: 1300px;
+  }
+  .summary img {
+    width: 1300px;
+    height: 30rem;
+    margin-bottom: 30px;
+  }
+
+  .summary2 {
+    margin-bottom: 5%;
+    width: 1300px;
+  }
+  .summary2 img {
+    height: 45rem;
+    width: 1300px;
+    margin-bottom: 40px;
+  }
+
+  .liIzqImage {
+    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_906,c_limit/63f8e505-2c41-4a99-a09d-16fb44a2cb74/sitio-web-oficial-de-nike.png");
+    background-repeat: no-repeat;
+    color: black;
+    background-size: cover;
+  }
+
+  .liDerImage {
+    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_906,c_limit/0dcdd7d4-1d33-47ab-94ba-f8dcc0553588/sitio-web-oficial-de-nike.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .summary2 h2 {
+    font-size: 80px;
+
+    margin-top: -45px;
+    margin-bottom: 20px;
+  }
+  .summary2 p {
+    color: black;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 16px;
+  }
+
+  .parrafo p {
+    text-align: start;
+    margin-left: 40px;
+    font-size: 24px;
+  }
+
+  .parrafo ul {
+    display: flex;
+    width: 1250px;
+    list-style: none;
+  }
+  .parrafo ul li {
+    width: 50%;
+    color: black;
+    align-self: center;
+    margin: 7px;
+    height: 45rem;
+  }
+
+  .parrafo ul li button {
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    font-style: none;
+    height: 40px;
+    width: 110px;
+    margin-left: -38%;
+    align-items: center;
+  }
+  /* */
+  .parrafo ul li img {
+    text-align: start;
+  }
+  .parrafo ul li p {
+    text-align: start;
+    margin-top: 90%;
+    font-size: 20px;
+    color: white;
+  }
+}
+.parrafoSegmento p {
+  text-align: start;
+  margin-left: 40px;
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 1800px) {
+  .background {
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 1800px;
+    margin: 0 1%;
+  }
+
+  .blackButton {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-style: none;
+    height: 40px;
+    width: 110px;
+  }
+  .blackButton:hover {
+    background-color: rgba(117, 117, 117, 255);
+    border: 0;
+  }
+
+  .summary {
+    margin-top: -15%;
+    width: 100%;
+  }
+  .summary img {
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 30px;
+  }
+
+  .summary2 {
+    position: relative;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .summary2 img {
+    height: 60rem;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .liIzqImage {
+    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_906,c_limit/63f8e505-2c41-4a99-a09d-16fb44a2cb74/sitio-web-oficial-de-nike.png");
+    background-repeat: no-repeat;
+    color: black;
+    background-size: cover;
+  }
+
+  .liDerImage {
+    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_906,c_limit/0dcdd7d4-1d33-47ab-94ba-f8dcc0553588/sitio-web-oficial-de-nike.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .summary2 h2 {
+    font-size: 80px;
+    margin-top: 0;
+    margin-top: -45px;
+    margin-bottom: 20px;
+  }
+  .summary2 p {
+    color: black;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 16px;
+  }
+
+  .parrafo p {
+    text-align: start;
+    margin-left: 40px;
+    font-size: 24px;
+  }
+
+  .parrafo ul {
+    display: flex;
+    list-style: none;
+    width: 97%;
+  }
+  .parrafo ul li {
+    width: 50%;
+    color: black;
+    align-self: center;
+    margin: 7px;
+    height: 65rem;
+  }
+  .parrafo ul li button {
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    font-style: none;
+    height: 40px;
+    width: 110px;
+    margin-left: -48%;
+    align-items: center;
+  }
+
+  /* */
+  .parrafo ul li img {
+    text-align: start;
+  }
+  .parrafo ul li p {
+    text-align: start;
+    margin-top: 83.5%;
+    font-size: 24px;
+    color: white;
+  }
+  .parrafoSegmento p {
+    text-align: start;
+    margin-left: 40px;
+    font-size: 24px;
+  }
+}
+
+/* ------------- Aqui comienza escritorio < 1800  ------------------------------------------*/
+/* ------------- Aqui comienza escritorio < 1800  ------------------------------------------*/

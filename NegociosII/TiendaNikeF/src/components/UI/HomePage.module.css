@@ -1,0 +1,8 @@
+.main {
+  margin-top: 30%;
+  display: flex;
+  margin-left: -45%;
+}
+.main img {
+  align-items: center;
+}

@@ -1,0 +1,131 @@
+@media only screen and (min-width: 1300px) {
+  .tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 33%;
+    font-family: sans-serif;
+    margin-top: 20px;
+  }
+  .tarjeta ul {
+    margin-left: -25px;
+    list-style: none;
+    display: flex;
+  }
+
+  .productName {
+    margin-top: -10px;
+    align-self: flex-start;
+    font-size: 18px;
+  }
+  .productDescription {
+    margin-top: -12px;
+    align-self: flex-start;
+    font-size: 14px;
+    color: grey;
+  }
+  .productPrice {
+    margin-left: 38%;
+    margin-top: -10px;
+    align-self: flex-start;
+    text-align: end;
+    font-size: 14px;
+  }
+
+  .titulo {
+    font-size: 22px;
+    padding: 10px 10px 0 10px;
+  }
+  .cuerpo {
+    padding: 10px;
+  }
+  .cuerpo img {
+    width: 400px;
+    height: 400px;
+  }
+  .pie {
+    background: #6699ff;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    text-align: center;
+  }
+  .pie a {
+    text-decoration: none;
+    color: white;
+  }
+  .pie a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 33.5%;
+    font-family: sans-serif;
+    margin-top: 20px;
+  }
+  .tarjeta ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .productName {
+    margin-top: -10px;
+    align-self: flex-start;
+    font-size: 20px;
+  }
+  .productDescription {
+    margin-top: -12px;
+    align-self: flex-start;
+    font-size: 16px;
+    color: grey;
+  }
+  .productPrice {
+    margin-left: 38%;
+    margin-top: -10px;
+    align-self: flex-start;
+    text-align: end;
+    font-size: 16px;
+  }
+
+  .titulo {
+    font-size: 24px;
+    padding: 10px 10px 0 10px;
+  }
+  .cuerpo {
+    padding: 10px;
+  }
+  .cuerpo img {
+    width: 550px;
+    height: 550px;
+  }
+  .pie {
+    background: #6699ff;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    text-align: center;
+  }
+  .pie a {
+    text-decoration: none;
+    color: white;
+  }
+  .pie a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+  }
+}
