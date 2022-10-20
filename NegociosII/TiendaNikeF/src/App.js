@@ -8,7 +8,7 @@ import Comments from "./components/comments/Comments";
 import HomePage from "./components/UI/HomePage";
 import Cart from "./components/Cart/Cart";
 import FooterBlack from "./components/UI/FooterBlack";
-import React, { useState, Fragment, useContext } from "react";
+import React, { useState, Fragment, useContext, useEffect } from "react";
 import AuthContext from "./components/store/Auth-context";
 import MainNavigation from "./components/layout/MainNavigation";
 import CartProvier from "./components/store/CartProvider";
@@ -23,7 +23,23 @@ function App() {
   const [menu, setmenu] = useState(false);
   const [cartIsShowCart, setCardIsShowCart] = useState(false);
   const authCtx = useContext(AuthContext);
+  const [widthBrowser, setWidthBrowser] = useState(window.outerWidth);
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
 
+  const changeSize = () => {
+    console.log("la pantalla cambio de tamaño");
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", changeSize);
+    return () => {
+      window.removeEventListener("resize", changeSize);
+    };
+  }, []);
+
+  console.log(widthBrowser);
   const showCartHandler = () => {
     setCardIsShowCart(true);
   };
@@ -37,8 +53,11 @@ function App() {
     <Fragment>
       <CartProvier>
         {cartIsShowCart && <Cart onHideCart={hideCartHandler}></Cart>}
-        <MainNavigation onShowCart={showCartHandler}></MainNavigation>
-        <MenuHamburguesa></MenuHamburguesa>
+        {width > 770 ? (
+          <MainNavigation onShowCart={showCartHandler}></MainNavigation>
+        ) : (
+          <MenuHamburguesa></MenuHamburguesa>
+        )}
         <Layout>
           <Routes>
             <Route path="/" element={<Navigate replace to="/homePage" />} />
