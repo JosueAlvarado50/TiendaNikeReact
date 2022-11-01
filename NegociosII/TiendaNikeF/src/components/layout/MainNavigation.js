@@ -37,6 +37,14 @@ const MainNavigation = (props) => {
           </li>
           <li>
             <NavLink
+              to="/catalogo"
+              className={(navData) => (navData.isActive ? classes.active : "")}
+            >
+              <p>Catalogo </p>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/products"
               className={(navData) => (navData.isActive ? classes.active : "")}
             >
@@ -52,6 +60,18 @@ const MainNavigation = (props) => {
                 }
               >
                 <p> add Products </p>
+              </NavLink>
+            )}
+          </li>
+          <li>
+            {isLoggedIn && (
+              <NavLink
+                to="/list-client"
+                className={(navData) =>
+                  navData.isActive ? classes.active : ""
+                }
+              >
+                <p> all Clients </p>
               </NavLink>
             )}
           </li>

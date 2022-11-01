@@ -1,0 +1,30 @@
+.body {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 5%;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  border-collapse: collapse;
+}
+.body thead {
+  background-color: black;
+  height: 60px;
+  text-transform: uppercase;
+}
+.body thead tr th {
+  text-align: left;
+  color: white;
+}
+.body tbody tr {
+  background: linear-gradient(#aab2b2, #e7e3e8);
+  height: 40px;
+}
+.body tbody tr:hover {
+  background: white;
+}
+.body tbody tr td {
+  border-bottom: solid 1px;
+}

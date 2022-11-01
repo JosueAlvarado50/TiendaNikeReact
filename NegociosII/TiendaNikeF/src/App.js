@@ -17,6 +17,8 @@ import UserRegister from "./components/layout/UserUI/UserRegister";
 import ProductsNike from "./pages/ProductsNike";
 import NewProduct from "./pages/newProduct";
 import MenuHamburguesa from "../src/components/layout/UserUI/MenuHamburguesa";
+import ListClient from "./components/clients/ListClient";
+import Catalogo from "./pages/Catalogo";
 
 //!Falta corregir mostrar el card
 function App() {
@@ -85,6 +87,9 @@ function App() {
             <Route path="*" element={<NotFound />} />
             <Route path="/login" element={<UserLogin />} />
             <Route path="/new-account" element={<UserRegister />} />
+            <Route path="/list-client" element={<ListClient />} />
+            <Route path="/catalogo" element={<Catalogo />} />
+
             <Route path="/products" element={<ProductsNike />}></Route>
             {authCtx.isLoggedIn && (
               <Route path="/add-product" element={<NewProduct />}></Route>
