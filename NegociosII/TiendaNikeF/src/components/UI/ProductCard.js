@@ -9,13 +9,11 @@ const ProductCard = (props) => {
 
       <ul>
         <li>
-          <p className={classes.productName}>Nike AF1 Yellow</p>
-          <p className={classes.productDescription}>
-            Calzado de entrenamiento para mujer
-          </p>
+          <p className={classes.productName}>{props.modelo}</p>
+          <p className={classes.productDescription}>{props.tipo}</p>
         </li>
 
-        <li className={classes.productPrice}>$1,959</li>
+        <li className={classes.productPrice}>${props.precio}</li>
       </ul>
     </div>
   );

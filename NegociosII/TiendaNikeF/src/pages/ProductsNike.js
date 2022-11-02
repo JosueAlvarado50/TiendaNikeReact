@@ -1,63 +1,54 @@
 import classes from "./ProductsNike.module.css";
 import flechaAbajo from "../assets/flechaAbajo.png";
+import { useCallback, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
 const ProductsNike = () => {
+  const params = useParams();
+  const [producto, setProducto] = useState([]);
+  const endpoint = "http://127.0.0.1:8000/api";
+
+  const getProductById = useCallback(async () => {
+    const response = await axios.get(`${endpoint}/product/${params.productId}`);
+    setProducto(response.data);
+
+    console.log(response.data);
+  }, [params.productId]);
+
+  useEffect(() => {
+    getProductById();
+  }, [getProductById]);
+
   const onClickHandler = () => {};
   return (
     <div className={classes.backgoundProduct}>
       <div className={classes.descriptionImages}>
-        <img
-          alt="nike sb Chron 2"
-          src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/73752503-a046-42ac-a006-b70b54189329/calzado-de-skateboarding-sb-chron-2-zr8R7R.png"
-        ></img>
+        <img alt={producto.modelo} src={producto.img_1}></img>
         <video autoPlay loop playsInline muted>
           <source
-            src="https://static.nike.com/a/videos/q_90,vc_vp9/916fb268-149e-41f7-8143-f43c1bfb79e8/video.webm"
+            src="https://static.nike.com/a/videos/q_90,vc_vp9/d58e9afa-e042-497c-917d-d625c432b72b/video.webm"
             type="video/webm"
           ></source>
         </video>
-        <img
-          alt="nike sb Chron 2"
-          src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,q_80,w_440/13ced543-ed19-4846-88bb-f2e7790c0898/calzado-de-skateboarding-sb-chron-2-zr8R7R.png"
-        ></img>
-        <img
-          alt="nike sb Chron 2"
-          src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,q_80,w_440/59282767-819c-4795-a965-8060a3d7d44c/calzado-de-skateboarding-sb-chron-2-zr8R7R.png"
-        ></img>
-        <img
-          alt="nike sb Chron 2"
-          src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,q_80,w_440/7ad4b422-8d76-4dee-8f7c-371ed39fa8a6/calzado-de-skateboarding-sb-chron-2-zr8R7R.png"
-        ></img>
-        <img
-          alt="nike sb Chron 2"
-          src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/73752503-a046-42ac-a006-b70b54189329/calzado-de-skateboarding-sb-chron-2-zr8R7R.png"
-        ></img>
-        <img
-          alt="nike sb Chron 2"
-          src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,q_80,w_440/92bcd32c-8182-4f80-abeb-eed62234f473/calzado-de-skateboarding-sb-chron-2-zr8R7R.png"
-        ></img>
-        <img
-          alt="nike sb Chron 2"
-          src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,q_80,w_440/18dd7eda-02cb-4adc-a6fd-a85099319479/calzado-de-skateboarding-sb-chron-2-zr8R7R.png"
-        ></img>
-        <img
-          alt="nike sb Chron 2"
-          src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,q_80,w_440/a83feb71-a03b-4449-8bef-4de9506ba0af/calzado-de-skateboarding-sb-chron-2-zr8R7R.png"
-        ></img>
+        <img alt="nike sb Chron 2" src={producto.img_3}></img>
+        <img alt="nike sb Chron 2" src={producto.img_4}></img>
+        <img alt="nike sb Chron 2" src={producto.img_5}></img>
+        <img alt="nike sb Chron 2" src={producto.img_6}></img>
+        <img alt="nike sb Chron 2" src={producto.img_7}></img>
+        <img alt="nike sb Chron 2" src={producto.img_8}></img>
+        <img alt="nike sb Chron 2" src={producto.img_9}></img>
       </div>
       <div className={classes.descriptionProducts}>
         <div>
-          <h1>Nike SB Chron 2</h1>
-          <p>Calzado de skateboarding</p>
-          <p>$1,749</p>
+          <h1>{producto.modelo}</h1>
+          <p>{producto.tipo}</p>
+          <p>${producto.precio}</p>
         </div>
         <div>
           <fieldset className={classes.fieldSetImg}>
             <button>
-              <img
-                alt="example-1"
-                src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/459ba93d-4e55-4a37-8cc6-46b9a4f6ce19/calzado-de-skateboarding-sb-chron-2-zr8R7R.png"
-              ></img>
+              <img alt="example-1" src={producto.img_model_1}></img>
             </button>
             <button>
               <img
@@ -108,16 +99,9 @@ const ProductsNike = () => {
           </button>
           <button className={classes.whiteButton}>favoritos ♥</button>
           <div className={classes.textDescriptionProduct}>
-            <p>
-              El Nike SB Chron 2, flexible y transpirable, es una versión a la
-              altura de sus predecesoras.La actualización del diseño incluye un
-              cuello y un talón renovados para ofrecer un ajuste mejorado y
-              mantener la comodidad y el rendimiento que esperas de Nike SB.
-            </p>
+            <p>{producto.descripcion}</p>
             <ul>
-              <li>
-                Color que se muestra: Negro/Negro/Marrón claro goma/Blanco
-              </li>
+              <li>Color que se muestra: {producto.color}</li>
               <li>Estilo: DM3493-002</li>
             </ul>
           </div>

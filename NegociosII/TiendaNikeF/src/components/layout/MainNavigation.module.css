@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 280px) {
   .header {
     width: 100%;
@@ -7,7 +6,7 @@
     padding: 0 10%;
     justify-content: space-between;
     align-items: center;
-    
+
     margin-bottom: -15%;
   }
   /*margin-bottom: 15rem;  */
@@ -20,7 +19,6 @@
   .logo p {
     font-size: 18px;
     width: 130px;
-    
   }
   .logo img {
     height: 20px;
@@ -37,8 +35,6 @@
     padding: 0;
     margin-left: 3%;
     width: 100%;
-    
-
   }
   .nav img {
     height: 20px;
@@ -74,20 +70,17 @@
   }
   .logo2 {
     display: flex;
-    
   }
   .logo2 img {
     height: 30px;
     width: 30px;
     margin-left: -40%;
-    
   }
   .logo2 button {
     background-color: transparent;
     border: 0;
     font-size: 21px;
     margin-left: -15%;
-    
   }
   .logo2 button:hover {
     text-decoration: underline;
@@ -101,7 +94,7 @@
     padding: 0 10%;
     justify-content: space-between;
     align-items: center;
-    
+
     margin-bottom: -15%;
   }
   /*margin-bottom: 15rem;  */
@@ -114,7 +107,6 @@
   .logo p {
     font-size: 18px;
     width: 130px;
-    
   }
   .logo img {
     height: 20px;
@@ -131,8 +123,6 @@
     padding: 0;
     margin-left: 3%;
     width: 100%;
-    
-
   }
   .nav img {
     height: 20px;
@@ -168,22 +158,34 @@
   }
   .logo2 {
     display: flex;
-    
   }
   .logo2 img {
     height: 30px;
     width: 30px;
     margin-left: -40%;
-    
   }
   .logo2 button {
     background-color: transparent;
     border: 0;
     font-size: 21px;
     margin-left: -15%;
-    
   }
   .logo2 button:hover {
+    text-decoration: underline;
+  }
+  .logoPerfil {
+    display: flex;
+  }
+  .logoPerfil img {
+    height: 30px;
+    width: 30px;
+  }
+  .logoPerfil button {
+    background-color: transparent;
+    border: 0;
+    font-size: 21px;
+  }
+  .logoPerfil button:hover {
     text-decoration: underline;
   }
 }
@@ -195,7 +197,7 @@
     padding: 0 10%;
     justify-content: space-between;
     align-items: center;
-    
+
     margin-bottom: -15%;
   }
   /*margin-bottom: 15rem;  */
@@ -208,7 +210,6 @@
   .logo p {
     font-size: 18px;
     width: 130px;
-    
   }
   .logo img {
     height: 20px;
@@ -225,8 +226,6 @@
     padding: 0;
     margin-left: 3%;
     width: 100%;
-    
-
   }
   .nav img {
     height: 20px;
@@ -262,22 +261,34 @@
   }
   .logo2 {
     display: flex;
-    
   }
   .logo2 img {
     height: 30px;
     width: 30px;
     margin-left: -40%;
-    
   }
   .logo2 button {
     background-color: transparent;
     border: 0;
     font-size: 21px;
     margin-left: -15%;
-    
   }
   .logo2 button:hover {
+    text-decoration: underline;
+  }
+  .logoPerfil {
+    display: flex;
+  }
+  .logoPerfil img {
+    height: 30px;
+    width: 30px;
+  }
+  .logoPerfil button {
+    background-color: transparent;
+    border: 0;
+    font-size: 21px;
+  }
+  .logoPerfil button:hover {
     text-decoration: underline;
   }
 }
@@ -351,7 +362,6 @@
   }
   .logo2 {
     display: flex;
-    
   }
   .logo2 img {
     height: 30px;
@@ -365,6 +375,21 @@
     margin-right: -140px;
   }
   .logo2 button:hover {
+    text-decoration: underline;
+  }
+  .logoPerfil {
+    display: flex;
+  }
+  .logoPerfil img {
+    height: 30px;
+    width: 30px;
+  }
+  .logoPerfil button {
+    background-color: transparent;
+    border: 0;
+    font-size: 21px;
+  }
+  .logoPerfil button:hover {
     text-decoration: underline;
   }
 }
@@ -451,6 +476,21 @@
     margin-right: -80px;
   }
   .logo2 button:hover {
+    text-decoration: underline;
+  }
+  .logoPerfil {
+    display: flex;
+  }
+  .logoPerfil img {
+    height: 30px;
+    width: 30px;
+  }
+  .logoPerfil button {
+    background-color: transparent;
+    border: 0;
+    font-size: 21px;
+  }
+  .logoPerfil button:hover {
     text-decoration: underline;
   }
 }

@@ -7,6 +7,7 @@ import { useContext } from "react";
 import AuthContext from "../store/Auth-context";
 import logoutLogo from "../../assets/logout.png";
 import logoLogin from "../../assets/logo_login.png";
+import iconoPerfil from "../../assets/iconoPerfil.png";
 
 const MainNavigation = (props) => {
   const authCtx = useContext(AuthContext);
@@ -35,6 +36,7 @@ const MainNavigation = (props) => {
               <p>home </p>
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/catalogo"
@@ -43,14 +45,14 @@ const MainNavigation = (props) => {
               <p>Catalogo </p>
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/products"
               className={(navData) => (navData.isActive ? classes.active : "")}
             >
               <p>Products </p>
             </NavLink>
-          </li>
+          </li>*/}
           <li>
             {isLoggedIn && (
               <NavLink
@@ -60,6 +62,21 @@ const MainNavigation = (props) => {
                 }
               >
                 <p> add Products </p>
+              </NavLink>
+            )}
+          </li>
+          <li>
+            {isLoggedIn && (
+              <NavLink
+                to="/perfil"
+                className={(navData) =>
+                  navData.isActive ? classes.active : ""
+                }
+              >
+                <div className={classes.logoPerfil}>
+                  <img alt="logo-logout" src={iconoPerfil}></img>
+                  <p> Perfil </p>
+                </div>
               </NavLink>
             )}
           </li>
@@ -107,7 +124,7 @@ const MainNavigation = (props) => {
           <li>
             {isLoggedIn && (
               <NavLink
-                to="/cart"
+                to="/homePage"
                 className={(navData) =>
                   navData.isActive ? classes.active : ""
                 }

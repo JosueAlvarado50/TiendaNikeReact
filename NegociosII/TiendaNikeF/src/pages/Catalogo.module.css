@@ -1,0 +1,58 @@
+@media only screen and (min-width: 800px) {
+  .catalogo {
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 3%;
+    display: flex;
+  }
+  .grid_iz {
+    width: 30%;
+    height: auto;
+  }
+  .grid_der {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .catalogo {
+    width: 130%;
+    margin: 0 -15%;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    display: flex;
+  }
+  .grid_iz {
+    width: 30%;
+    height: auto;
+  }
+  .grid_der {
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .catalogo {
+    width: 150%;
+    margin: 0 -25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .grid_iz {
+    width: 30%;
+    height: auto;
+  }
+  .grid_der {
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

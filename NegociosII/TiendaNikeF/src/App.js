@@ -19,6 +19,8 @@ import NewProduct from "./pages/newProduct";
 import MenuHamburguesa from "../src/components/layout/UserUI/MenuHamburguesa";
 import ListClient from "./components/clients/ListClient";
 import Catalogo from "./pages/Catalogo";
+import ClientLogin from "./components/layout/UserUI/ClientLogin";
+import loginNavigation from "./components/layout/UserUI/loginNavigation";
 
 //!Falta corregir mostrar el card
 function App() {
@@ -56,7 +58,10 @@ function App() {
       <CartProvier>
         {cartIsShowCart && <Cart onHideCart={hideCartHandler}></Cart>}
         {width > 770 ? (
-          <MainNavigation onShowCart={showCartHandler}></MainNavigation>
+          <div>
+            <loginNavigation></loginNavigation>
+            <MainNavigation onShowCart={showCartHandler}></MainNavigation>
+          </div>
         ) : (
           <MenuHamburguesa></MenuHamburguesa>
         )}
@@ -89,10 +94,18 @@ function App() {
             <Route path="/new-account" element={<UserRegister />} />
             <Route path="/list-client" element={<ListClient />} />
             <Route path="/catalogo" element={<Catalogo />} />
+            <Route
+              path="/catalogo/:productId"
+              element={<ProductsNike></ProductsNike>}
+            ></Route>
 
             <Route path="/products" element={<ProductsNike />}></Route>
+
             {authCtx.isLoggedIn && (
               <Route path="/add-product" element={<NewProduct />}></Route>
+            )}
+            {authCtx.isLoggedIn && (
+              <Route path="/perfil" element={<ClientLogin />}></Route>
             )}
           </Routes>
         </Layout>
