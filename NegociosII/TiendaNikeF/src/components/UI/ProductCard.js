@@ -9,7 +9,9 @@ const ProductCard = (props) => {
 
       <ul>
         <li>
-          <p className={classes.productName}>{props.modelo}</p>
+          <p className={classes.productName}>
+            <p>{props.modelo}</p>
+          </p>
           <p className={classes.productDescription}>{props.tipo}</p>
         </li>
 

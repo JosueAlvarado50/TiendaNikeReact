@@ -12,6 +12,7 @@ const Cart = (props) => {
   const cartCtx = useContext(CartContext);
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
+
   const cartItemRemoveHandler = (id) => {
     cartCtx.removeItem(id);
   };
@@ -51,6 +52,8 @@ const Cart = (props) => {
             name={item.name}
             amount={item.amount}
             price={item.price}
+            color={item.color}
+            url={item.url}
             onRemove={cartItemRemoveHandler.bind(null, item.id)}
             onAdd={cartItemAddHandler.bind(null, item)}
           ></CartItem>

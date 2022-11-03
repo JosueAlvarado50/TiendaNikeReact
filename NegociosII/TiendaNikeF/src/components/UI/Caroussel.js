@@ -3,7 +3,12 @@ import ProductCard from "./ProductCard";
 const Caroussel = (props) => {
   return (
     <div className={classes.caroussel}>
-      <ProductCard url="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ebcb3543-8068-470a-b64b-4c1044824bbf/calzado-force-1-toggle-se-89gJWj.png"></ProductCard>
+      <ProductCard
+        modelo="AF1"
+        tipo="tenis"
+        precio="1699"
+        url="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ebcb3543-8068-470a-b64b-4c1044824bbf/calzado-force-1-toggle-se-89gJWj.png"
+      ></ProductCard>
       <ProductCard url="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/92f26be5-4b91-453c-b858-7e9867fe07b5/calzado-e-infantil-force-1-toggle-se-w7S53B.png"></ProductCard>
       <ProductCard url="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/65092870-fcd9-449a-be5b-c0082f07de07/calzado-para-flex-runner-2-lil-whc1SG.png"></ProductCard>
       <ProductCard url="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/41044a32-1316-4a7f-98c2-df378bd064a8/calzado-e-infantil-team-hustle-500-10-lil-3hBpdn.png"></ProductCard>

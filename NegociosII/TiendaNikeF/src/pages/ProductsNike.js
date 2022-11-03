@@ -1,13 +1,15 @@
 import classes from "./ProductsNike.module.css";
 import flechaAbajo from "../assets/flechaAbajo.png";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import CartContext from "../components/store/cart-context";
 
 const ProductsNike = () => {
   const params = useParams();
   const [producto, setProducto] = useState([]);
   const endpoint = "http://127.0.0.1:8000/api";
+  const cartCtx = useContext(CartContext);
 
   const getProductById = useCallback(async () => {
     const response = await axios.get(`${endpoint}/product/${params.productId}`);
@@ -20,7 +22,19 @@ const ProductsNike = () => {
     getProductById();
   }, [getProductById]);
 
-  const onClickHandler = () => {};
+  const onClickHandler = () => {
+    console.log("prueba de agregar producto");
+  };
+  const addToCartHandler = () => {
+    cartCtx.addItem({
+      id: producto.id,
+      name: producto.modelo,
+      amount: 1,
+      color: producto.color,
+      price: producto.precio,
+      url: producto.img_model_1,
+    });
+  };
   return (
     <div className={classes.backgoundProduct}>
       <div className={classes.descriptionImages}>
@@ -94,7 +108,7 @@ const ProductsNike = () => {
           </div>
         </div>
         <div>
-          <button className={classes.blackButton}>
+          <button onClick={addToCartHandler} className={classes.blackButton}>
             Agregar a la bolsa de compra
           </button>
           <button className={classes.whiteButton}>favoritos ♥</button>
