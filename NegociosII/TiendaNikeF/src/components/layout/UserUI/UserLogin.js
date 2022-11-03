@@ -59,6 +59,10 @@ const UserLogin = () => {
         );
         authCtx.login(data.idToken, expirationTime.toISOString());
         console.log("Inicio de sesion exitoso");
+        authCtx.getInfo(
+          correoInputRef.current.value,
+          passwrodInputRef.current.value
+        );
         console.log(data);
         correoInputRef.current.value = "";
         passwrodInputRef.current.value = "";
