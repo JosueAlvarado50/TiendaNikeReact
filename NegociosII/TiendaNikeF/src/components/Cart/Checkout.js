@@ -101,7 +101,7 @@ const Checkout = (props) => {
   }`;
 
   const newClientHandler = useCallback(async () => {
-    await axios.post(`${endpoint}/client`, {
+    await axios.post(`${endpoint}/cliente`, {
       email: autCtx.getEmail(),
       password: autCtx.getPass(),
       name: nameInputRef.current.value,
@@ -112,7 +112,7 @@ const Checkout = (props) => {
       street: streetInputRef.current.value,
       codigo_postal: PostalCodeInputRef.current.value,
     });
-  }, []);
+  }, [autCtx]);
 
   return (
     <form className={classes.form} onSubmit={confirmHandler}>

@@ -29,7 +29,7 @@ const Cart = (props) => {
     console.log(userData);
 
     const response = await fetch(
-      "https://react-http-f7f8c-default-rtdb.firebaseio.com/orders.json",
+      "https://fir-react-635f6-default-rtdb.firebaseio.com//orders.json",
       {
         method: "POST",
         body: JSON.stringify({
