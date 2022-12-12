@@ -1,8 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { Fragment } from "react/cjs/react.development";
-import Card from "../components/UI/Card";
-import ProductCard from "../components/UI/ProductCard";
+
 import ProductCardCatalogo from "../components/Products/ProductCardCatalogo";
 import classes from "./Catalogo.module.css";
 

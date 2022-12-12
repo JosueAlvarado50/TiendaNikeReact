@@ -20,7 +20,6 @@ import MenuHamburguesa from "../src/components/layout/UserUI/MenuHamburguesa";
 import ListClient from "./components/clients/ListClient";
 import Catalogo from "./pages/Catalogo";
 import ClientLogin from "./components/layout/UserUI/ClientLogin";
-import loginNavigation from "./components/layout/UserUI/loginNavigation";
 
 //!Falta corregir mostrar el card
 function App() {
@@ -32,7 +31,6 @@ function App() {
   const [height, setHeight] = useState(window.innerHeight);
 
   const changeSize = () => {
-    console.log("la pantalla cambio de tamaño");
     setWidth(window.innerWidth);
     setHeight(window.innerHeight);
   };
@@ -43,7 +41,6 @@ function App() {
     };
   }, []);
 
-  console.log(widthBrowser);
   const showCartHandler = () => {
     setCardIsShowCart(true);
   };
@@ -58,10 +55,9 @@ function App() {
       <CartProvier>
         {cartIsShowCart && <Cart onHideCart={hideCartHandler}></Cart>}
         {width > 770 ? (
-          <div>
-            <loginNavigation></loginNavigation>
+          <nav>
             <MainNavigation onShowCart={showCartHandler}></MainNavigation>
-          </div>
+          </nav>
         ) : (
           <MenuHamburguesa></MenuHamburguesa>
         )}

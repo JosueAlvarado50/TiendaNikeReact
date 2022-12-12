@@ -22,7 +22,7 @@ const MainNavigation = (props) => {
     <header className={classes.header}>
       <div className={classes.logo}>
         <img alt="nike Snickers" src={logonike}></img>
-        <p> Yoshua Store</p>
+        <p> Nike Store</p>
       </div>
 
       <nav className={classes.nav}>
@@ -33,7 +33,7 @@ const MainNavigation = (props) => {
               to="/homePage"
               className={(navData) => (navData.isActive ? classes.active : "")}
             >
-              <p>home </p>
+              <p>Home </p>
             </NavLink>
           </li>
 
@@ -53,18 +53,7 @@ const MainNavigation = (props) => {
               <p>Products </p>
             </NavLink>
           </li>*/}
-          <li>
-            {isLoggedIn && (
-              <NavLink
-                to="/add-product"
-                className={(navData) =>
-                  navData.isActive ? classes.active : ""
-                }
-              >
-                <p> add Products </p>
-              </NavLink>
-            )}
-          </li>
+
           <li>
             {isLoggedIn && (
               <NavLink
@@ -81,29 +70,7 @@ const MainNavigation = (props) => {
             )}
           </li>
           <li>
-            {isLoggedIn && (
-              <NavLink
-                to="/list-client"
-                className={(navData) =>
-                  navData.isActive ? classes.active : ""
-                }
-              >
-                <p> all Clients </p>
-              </NavLink>
-            )}
-          </li>
-          <li>
-            {" "}
-            {isLoggedIn && (
-              <NavLink
-                to="/cart"
-                className={(navData) =>
-                  navData.isActive ? classes.active : ""
-                }
-              >
-                <HeaderCartButton onClick={props.onShowCart}></HeaderCartButton>
-              </NavLink>
-            )}
+            <HeaderCartButton onClick={props.onShowCart}></HeaderCartButton>)
           </li>
           <li>
             {" "}

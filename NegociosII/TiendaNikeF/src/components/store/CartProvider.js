@@ -4,6 +4,7 @@ import CartContext from "./cart-context";
 const defaultCartState = {
   items: [],
   totalAmount: 0,
+  idCarrito: "",
 };
 
 const cartReducer = (state, action) => {
@@ -61,6 +62,13 @@ const cartReducer = (state, action) => {
   if (action.type === "CLEAR") {
     return defaultCartState;
   }
+  if (action.type === "SETID") {
+    console.log("se va a setear el id");
+    return {
+      id: action.idCarrito,
+      cliente_id: "",
+    };
+  }
 
   return defaultCartState;
 };
@@ -80,10 +88,15 @@ const CartProvier = (props) => {
   const clearCartHandler = () => {
     dispatchCartAction({ type: "CLEAR" });
   };
+  const setIdCartHandler = (idCart) => {
+    dispatchCartAction({ type: "SETID", idCart: idCart });
+  };
 
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
+    idCarrito: "",
+    setId: setIdCartHandler,
     addItem: addItemToCartHandler,
     removeItem: removeItemToCartHandler,
     clearCart: clearCartHandler,

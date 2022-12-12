@@ -4,12 +4,20 @@ import { useCallback, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import CartContext from "../components/store/cart-context";
+import AuthContext from "../components/store/Auth-context";
 
 const ProductsNike = () => {
   const params = useParams();
   const [producto, setProducto] = useState([]);
   const endpoint = "http://127.0.0.1:8000/api";
   const cartCtx = useContext(CartContext);
+  const authCtx = useContext(AuthContext);
+
+  if (authCtx.isLoggedIn) {
+    console.log("el usuario esta loggeado");
+  } else {
+    console.log("el usuario no esta loqueado");
+  }
 
   const getProductById = useCallback(async () => {
     const response = await axios.get(`${endpoint}/product/${params.productId}`);

@@ -42,6 +42,7 @@ const UserLogin = () => {
         setIsLoading(false);
 
         if (response.ok) {
+          localStorage.setItem("email", enteredEmail);
           return response.json();
 
           //..
@@ -57,7 +58,7 @@ const UserLogin = () => {
         const expirationTime = new Date(
           new Date().getTime() + +data.expiresIn * 1000
         );
-        authCtx.login(data.idToken, expirationTime.toISOString());
+        authCtx.login(enteredEmail, data.idToken, expirationTime.toISOString());
         console.log("Inicio de sesion exitoso");
         authCtx.getInfo(
           correoInputRef.current.value,

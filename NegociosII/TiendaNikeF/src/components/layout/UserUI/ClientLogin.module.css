@@ -3,24 +3,20 @@
   margin: 0 -25%;
   height: auto;
   display: flex;
-  background-color: cadetblue;
 }
 .gridIzq {
   width: 30%;
   height: auto;
-  background-color: yellowgreen;
 }
 .gridDer {
   width: 70%;
   height: auto;
-  background-color: chocolate;
 }
 .form {
   margin: 0 auto;
   margin-bottom: 50px;
   width: 100%;
   height: auto;
-  background-color: blueviolet;
 }
 .espacio {
   width: 100%;

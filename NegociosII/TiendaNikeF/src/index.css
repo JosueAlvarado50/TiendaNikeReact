@@ -15,6 +15,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.navPrincipal {
+  width: 100%;
+}
 
 .focused {
   font-size: 3rem;

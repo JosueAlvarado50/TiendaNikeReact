@@ -50,12 +50,15 @@ export const AuthContextProvider = (props) => {
 
   const logoutHandler = useCallback(() => {
     setToken(null);
+    localStorage.removeItem("email");
     localStorage.removeItem("token");
     localStorage.removeItem("expirationTime");
+    localStorage.removeItem("client_id");
   }, []);
 
-  const loginHandler = (token, expirationTime) => {
+  const loginHandler = (email, token, expirationTime) => {
     setToken(token);
+    localStorage.setItem("email", email);
     localStorage.setItem("token", token);
     localStorage.setItem("expirationTime", expirationTime);
     const remainingTime = calculateRemainingTime(expirationTime);

@@ -1,20 +1,26 @@
 import classes from "./UserRegister.module.css";
 import { useRef, useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const UserRegister = () => {
   const nombreInputRef = useRef();
-  const apellidosInputRef = useRef();
+  const telefonoInputRef = useRef();
   const emailInputRef = useRef();
   const contraseñaInputRef = useRef();
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
+
+  const navigate = useNavigate();
+
   const URL =
     "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD8U7yQYzoTPcrRx4PziX92j-3NRzpEJD8";
 
+  const endpoint = "http://127.0.0.1:8000/api";
   const submitHandler = (event) => {
     event.preventDefault();
     const enteredName = nombreInputRef.current.value;
-    const enteredApellidos = apellidosInputRef.current.value;
+    const enteredTelefono = telefonoInputRef.current.value;
     const enteredEmail = emailInputRef.current.value;
     const enteredPassword = contraseñaInputRef.current.value;
 
@@ -36,6 +42,26 @@ const UserRegister = () => {
       if (res.ok) {
         //..
         console.log("User registered succesfully");
+        const responseUser = axios.post(`${endpoint}/cliente`, {
+          email: enteredEmail,
+          password: enteredPassword,
+          nombre: enteredName,
+          telefono: enteredTelefono,
+        });
+        console.log(responseUser.data);
+        //!poner el navigate que mande a home
+        navigate("../login", { replace: true });
+        fetch(URL, {
+          method: "POST",
+          body: JSON.stringify({
+            idToken: enteredEmail,
+            password: enteredPassword,
+            returnSecureToken: true,
+          }),
+          headers: {
+            "Content-type": "application/json",
+          },
+        });
       } else {
         return res.json().then((data) => {
           //show a error modal
@@ -49,7 +75,6 @@ const UserRegister = () => {
       }
     });
   };
-  const cleanInputsHandler = () => {};
 
   return (
     <form onSubmit={submitHandler} className={classes.form}>
@@ -67,11 +92,11 @@ const UserRegister = () => {
           className={classes.input}
         ></input>
       </div>
-      <label>Apellidos</label>
+      <label>Telefono</label>
       <div>
         <input
-          ref={apellidosInputRef}
-          type="apellidos"
+          ref={telefonoInputRef}
+          type="text"
           className={classes.input}
         ></input>
       </div>
@@ -92,9 +117,7 @@ const UserRegister = () => {
         ></input>
       </div>
       <div>
-        <button onClick={cleanInputsHandler} className={classes.button}>
-          Registrar
-        </button>
+        <button className={classes.button}>Registrar</button>
       </div>
     </form>
   );

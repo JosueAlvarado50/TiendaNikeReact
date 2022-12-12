@@ -11,13 +11,13 @@ const ProductCardCatalogo = (props) => {
         <div className={classes.cuerpo}>
           <img src={props.url} alt="1"></img>
         </div>
-
+        <div className={classes.productName}>
+          <p>{props.modelo}</p>
+        </div>
         <ul>
           <li>
-            <p className={classes.productName}>{props.modelo}</p>
             <p className={classes.productDescription}>{props.tipo}</p>
           </li>
-
           <li className={classes.productPrice}>${props.precio}</li>
           <li>
             <NavLink to={`/catalogo/${props.id}`}>

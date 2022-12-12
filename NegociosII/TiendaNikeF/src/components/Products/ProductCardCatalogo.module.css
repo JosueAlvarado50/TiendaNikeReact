@@ -170,12 +170,15 @@
   }
   .tarjeta ul {
     list-style: none;
-    display: flex;
+    width: 100%;
   }
 
-  .productName {
-    margin-top: -10px;
+  .productName p {
+    background: lightgrey;
+    width: 100%;
+
     align-self: flex-start;
+    margin-left: 5%;
     font-size: 20px;
   }
   .productDescription {
@@ -186,7 +189,6 @@
   }
   .productPrice {
     margin-left: 38%;
-    margin-top: -10px;
     align-self: flex-start;
     text-align: end;
     font-size: 16px;
